@@ -2,14 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800&amp;subset=cyrillic,latin'>
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/shop.style.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/headers/header-v5.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/footers/footer-v1.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/animate.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/jquery-steps/css/custom-jquery.steps.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/revolution-slider/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/master-slider/masterslider/style/masterslider.css">
+    <link rel='stylesheet' href="%PUBLIC_URL%/assets/plugins/master-slider/masterslider/skins/default/style.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/pages/page_contact.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/pages/page_about.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/custom.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/plugins/style-switcher.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap-magnify.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/pages/log-reg-v3.css">
+
+    <style>
+      #map_canvas {
+        width: 100%;
+        height: 400px;
+        margin:0 auto 0px;
+        background: gray;
+      }
+      </style>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,9 +55,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Frest Market Grocery</title>
   </head>
-  <body>
+  <body class="header-fixed">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +70,58 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- JS Global Compulsory -->
+    <script src="%PUBLIC_URL%/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="%PUBLIC_URL%/assets/plugins/back-to-top.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/smoothScroll.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/jquery.parallax.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Master Slider -->
+    <script src="%PUBLIC_URL%/assets/plugins/master-slider/masterslider/masterslider.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/master-slider/masterslider/jquery.easing.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+    <!-- JS Customization -->
+    <script src="%PUBLIC_URL%/assets/js/bootbox.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/custom.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/bootstrap-magnify.min.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/shop.app.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/plugins/owl-carousel.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/plugins/master-slider.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/plugins/revolution-slider.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/plugins/style-switcher.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/forms/contact.js"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/js/pages/page_contact_advanced.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmilIUpwH4qT0N1KsekwotGm4yEeUc55I&callback=initMap"></script>
+    <script type="text/javascript" src="%PUBLIC_URL%/assets/plugins/gmap/contact-map.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/forms/page_login.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/forms/page_registration.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/forms/page_login.js"></script>
+	  <script src="%PUBLIC_URL%/assets/js/plugins/stepWizard.js"></script>
+  	<script src="%PUBLIC_URL%/assets/js/forms/product-quantity.js"></script>
+	  <script src="%PUBLIC_URL%/assets/js/plugins/style-switcher.js"></script>
+    <script>
+      jQuery(document).ready(function(){
+        App.init();
+        App.initScrollBar();
+        App.initParallaxBg();
+        OwlCarousel.initOwlCarousel();
+        RevolutionSlider.initRSfullWidth();
+        StepWizard.initStepWizard();
+        StyleSwitcher.initStyleSwitcher();
+        PageContactForm.initPageContactForm();
+        Login.initLogin();
+        Registration.initRegistration();
+      });
+    </script>
   </body>
 </html>
